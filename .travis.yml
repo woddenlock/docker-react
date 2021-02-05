@@ -6,4 +6,4 @@ before_install:
   - docker build -t woddenlock/docker-react -f Dockerfile.dev .
 
 scripts:
-  - docker run --name woddenlock/docker-react npm run test -- -- coverage
+  - docker run --it woddenlock/docker-react npm run test -- -- coverage
